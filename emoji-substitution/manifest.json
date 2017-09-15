@@ -1,0 +1,18 @@
+{
+  "manifest_version": 2,
+  "name": "NewsCleaner",
+  "description": "Clean web news.",
+  "author": "Minh Duc Pham",
+  "version": "1.0",
+  "icons": {
+    "48": "icons/icon.png",
+    "96": "icons/icon@2x.png"
+  },
+
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["./listBanWords.js", "./zingvn.js","./vnexpress.js", "./cleanWord.js"]
+    }
+  ]
+}
